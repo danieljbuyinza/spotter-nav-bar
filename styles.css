@@ -1,0 +1,87 @@
+* {
+	font-family: "DM Sans", sans-serif;
+}
+
+.arrow-drop-down {
+	margin-top: -5px;
+	vertical-align: middle;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background: linear-gradient(125deg, rgb(64, 224, 208), rgb(0, 128, 128));
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: auto 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin-right: 30px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+	color: rgb(64, 224, 208);
+}
+
+nav ul li ul {
+	background-color: rgb(0, 128, 128);
+	border-radius: 10px;
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 15px 20px;
+	position: absolute;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul li ul li {
+	margin: 5px 0;
+}
+
+nav a {
+	color: #ffffff;
+	margin: auto 0;
+	text-decoration: none;
+}
+
+nav button {
+	border: none;
+	border-radius: 10px;
+	background-color: rgb(0, 128, 128);
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 15px;
+	outline: none;
+	padding: 10px 25px;
+	transition: color 0.2s ease;
+}
+
+nav button:hover {
+	background-color: rgb(1, 99, 105);
+}
+
+.spotter-name {
+	margin-bottom: -3px;
+}
